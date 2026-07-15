@@ -1,9 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Flame } from "lucide-react";
-import { cn } from "@/lib/utils";
-
+import { Menu, X } from "lucide-react";
 const NAV = [
   { to: "/", label: "Home" },
   { to: "/our-church", label: "Our Church" },
@@ -13,40 +11,17 @@ const NAV = [
 ] as const;
 
 export function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const { location } = useRouterState();
   const pathname = location.pathname;
-  const onHome = pathname === "/";
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => setOpen(false), [pathname]);
 
-  const solid = scrolled || !onHome;
-
   return (
-    <header
-      className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        solid
-          ? "bg-[var(--charcoal)]/95 backdrop-blur-md shadow-[0_1px_0_rgba(255,255,255,0.06)]"
-          : "bg-transparent",
-      )}
-    >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <Link to="/" className="flex items-center gap-2 text-white">
-          <span className="grid size-9 place-items-center rounded-xl bg-primary">
-            <Flame className="size-5 text-primary-foreground" strokeWidth={2.5} />
-          </span>
-          <span className="font-display text-xl font-bold tracking-tight">
-            Grace<span className="text-primary">Point</span>
-          </span>
+    <header className="fixed inset-x-0 top-0 z-50 bg-white shadow-md transition-all duration-300">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
+        <Link to="/" className="flex items-center gap-2">
+          <img src="/logo.png" alt="GracePoint Logo" className="h-16 w-auto object-contain" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -55,7 +30,7 @@ export function Navbar() {
               key={item.to}
               to={item.to}
               data-active={pathname === item.to}
-              className="nav-underline text-sm font-medium text-white/90 hover:text-white"
+              className="nav-underline text-sm font-medium text-gray-700 hover:text-primary"
             >
               {item.label}
             </Link>
@@ -74,7 +49,7 @@ export function Navbar() {
         <button
           aria-label="Open menu"
           onClick={() => setOpen(true)}
-          className="grid size-10 place-items-center rounded-full text-white lg:hidden"
+          className="grid size-10 place-items-center rounded-full text-gray-800 lg:hidden"
         >
           <Menu className="size-6" />
         </button>
