@@ -70,7 +70,7 @@ export function HeroCarousel() {
 
   return (
     <section
-      className="relative min-h-[85vh] w-full overflow-hidden bg-[var(--charcoal)]"
+      className="relative min-h-screen w-full overflow-hidden bg-[var(--charcoal)]"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       aria-roledescription="carousel"
@@ -87,7 +87,7 @@ export function HeroCarousel() {
           <motion.img
             src={slide.image}
             alt=""
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
             initial={{ scale: 1 }}
             animate={{ scale: 1.12 }}
             transition={{ duration: DURATION / 1000 + 1.5, ease: "linear" }}
@@ -97,7 +97,7 @@ export function HeroCarousel() {
         </motion.div>
       </AnimatePresence>
 
-      <div className="relative mx-auto flex min-h-[85vh] max-w-7xl flex-col justify-end px-5 pb-24 pt-32 lg:px-8 lg:pb-32">
+      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-5 pb-24 pt-44 lg:px-8 lg:pb-32">
         <AnimatePresence mode="wait">
           <motion.div
             key={current}
