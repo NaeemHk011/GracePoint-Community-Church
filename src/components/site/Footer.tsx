@@ -55,11 +55,15 @@ export function Footer() {
             {[
               {
                 title: "Anchored in Hope",
+                speaker: "Pastor Jordan Rivera",
+                date: "Jul 6, 2026",
                 img: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=200&q=60",
               },
               {
                 title: "The Weight of Grace",
-                img: "https://images.unsplash.com/photo-1520637836862-4d197d17c93a?auto=format&fit=crop&w=200&q=60",
+                speaker: "Pastor Maya Chen",
+                date: "Jun 29, 2026",
+                img: "https://images.unsplash.com/photo-1476234251651-f353703a034d?auto=format&fit=crop&w=200&q=60",
               },
             ].map((s) => (
               <li key={s.title} className="flex items-center gap-3">
@@ -70,7 +74,7 @@ export function Footer() {
                 />
                 <div>
                   <p className="text-sm font-medium">{s.title}</p>
-                  <p className="text-xs text-white/60">Pastor J. Rivera</p>
+                  <p className="text-xs text-white/60">{s.speaker} · {s.date}</p>
                 </div>
               </li>
             ))}

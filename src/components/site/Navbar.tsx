@@ -19,9 +19,9 @@ export function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white shadow-md transition-all duration-300">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-1 lg:px-8">
         <Link to="/" className="flex items-center gap-2">
-          <img src="/logo.png" alt="GracePoint Logo" className="h-16 w-auto object-contain" />
+          <img src="/logo.png" alt="GracePoint Logo" className="h-20 w-auto object-contain" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -75,9 +75,7 @@ export function Navbar() {
               className="absolute right-0 top-0 h-full w-[86%] max-w-sm bg-[var(--charcoal)] p-6 text-white"
             >
               <div className="flex items-center justify-between">
-                <span className="font-display text-lg font-bold">
-                  Grace<span className="text-primary">Point</span>
-                </span>
+                <img src="/logo.png" alt="GracePoint Logo" className="h-14 w-auto object-contain" />
                 <button
                   aria-label="Close menu"
                   onClick={() => setOpen(false)}

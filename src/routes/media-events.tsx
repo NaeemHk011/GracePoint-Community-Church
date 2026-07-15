@@ -97,7 +97,7 @@ const EVENTS: EventItem[] = [
 
 const SERMONS = [
   { title: "Anchored in Hope", speaker: "Pastor Jordan Rivera", date: "Jul 6, 2026", series: "Storms", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=900&q=70" },
-  { title: "The Weight of Grace", speaker: "Pastor Maya Chen", date: "Jun 29, 2026", series: "Ephesians", img: "https://images.unsplash.com/photo-1520637836862-4d197d17c93a?auto=format&fit=crop&w=900&q=70" },
+  { title: "The Weight of Grace", speaker: "Pastor Maya Chen", date: "Jun 29, 2026", series: "Ephesians", img: "https://images.unsplash.com/photo-1476234251651-f353703a034d?auto=format&fit=crop&w=900&q=70" },
   { title: "Neighbors, Not Strangers", speaker: "Pastor Elijah Ford", date: "Jun 22, 2026", series: "Storms", img: "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=900&q=70" },
   { title: "The Table Where Everyone Fits", speaker: "Pastor Maya Chen", date: "Jun 15, 2026", series: "Ephesians", img: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=70" },
   { title: "Prayer That Actually Works", speaker: "Pastor Jordan Rivera", date: "Jun 8, 2026", series: "Practices", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=900&q=70" },

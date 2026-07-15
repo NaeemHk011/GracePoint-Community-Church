@@ -86,7 +86,7 @@ const sermons = [
     title: "The Weight of Grace",
     speaker: "Pastor Maya Chen",
     date: "Jun 29, 2026",
-    img: "https://images.unsplash.com/photo-1520637836862-4d197d17c93a?auto=format&fit=crop&w=900&q=70",
+    img: "https://images.unsplash.com/photo-1476234251651-f353703a034d?auto=format&fit=crop&w=900&q=70",
   },
   {
     title: "Neighbors, Not Strangers",
@@ -117,9 +117,9 @@ const testimonials = [
 const igImages = [
   "https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=500&q=60",
   "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=500&q=60",
-  "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=500&q=60",
-  "https://images.unsplash.com/photo-1520637836862-4d197d17c93a?auto=format&fit=crop&w=500&q=60",
-  "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=500&q=60",
+  "https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=500&q=60",
+  "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=500&q=60",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGTKDKujVs8FqhJiMvPNhDYSHv0OfROSdIQehq5x5ZoCl3H7wBCuYKmUM-&s=10",
   "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=500&q=60",
 ];
 
